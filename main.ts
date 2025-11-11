@@ -12,7 +12,7 @@ let アナログ値 = 0
 basic.forever(function () {
     if (スイッチオン == 1) {
         アナログ値 += 1
-        basic.showNumber(アナログ値)
     }
     pins.analogWritePin(AnalogPin.P0, アナログ値)
+    basic.showNumber(アナログ値)
 })
